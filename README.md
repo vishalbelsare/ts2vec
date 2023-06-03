@@ -92,20 +92,3 @@ test_repr = model.encode(
 )  # n_instances x n_timestamps x output_dims
 # (The timestamp t's representation vector is computed using the observations located in [t-50, t])
 ```
-
-
-## Dispute
-
-[@wiwi](https://github.com/wiwi)'s issues: [Issue 0 (from other repo)](https://github.com/xingyu617/SimTS_Representation_Learning/issues/5) | [Issue 1](https://github.com/yuezhihan/ts2vec/issues/35) | [Issue 2](https://github.com/yuezhihan/ts2vec/issues/36) 
-
-[@wiwi](https://github.com/wiwi) believes that this implementation has a leakage issue, and "if we do not address it, then we violate the basic spirit of science." Although we have given a detailed explanation, [@wiwi](https://github.com/wiwi) thinks the issues have not been resolved and "people will have their own opinions".
-
-> the validation code would give the wrong performance improvement, it would be **unfair to other researchers**. We have identified this problem, and if we do not address it, then we **violate the basic spirit of science.**
-
-> part of the test sample is used to select the optimal parameters in the verification set, which will **undoubtedly make the final test result better.**
-
-> **You closed the unresolved issue again (What are you fraid?).** Ok, I don't want to discuss it any more. I think people will have their own opinions.
-
-We have examined the code carefully and found no leakage.
-
-Out of our respect for "the basic spirit of science", we present these issues here.
